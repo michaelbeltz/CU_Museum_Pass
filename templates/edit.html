@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		
+		<script type="text/javascript" src="{{ url_for('static', filename = 'edit.js') }}"></script>
+
+		<script>
+			id = {{id}}
+		</script>
+
+		<style>
+			#header{
+				padding: 50px;
+				font-size: 55px;
+				text-align: center;
+				background: white;
+			}
+			#textarea{
+				text-align: center;
+			}
+			#discard{
+				width: 100%;
+				text-align: center;
+			}
+			#post{
+				width: 100%;
+				text-align: center;
+			}
+		</style>
+
+	</head>
+	
+	<body>
+		<div class="container-fluid">
+			<div id="header">
+				Write a Review
+			</div>
+			<div id="textarea">
+				<input type="text" id="textbox">
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-2" id='discarder'>
+					<button id="discard">Discard</button>
+				</div>
+				<div class="col-md-2" id='poster'>
+					<button id="post">Post</button>
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
