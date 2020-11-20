@@ -15,4 +15,4 @@ This site allows users to check out the museums offered for free by the Columbia
     * Debugger is active!
     * Debugger PIN: 213-186-300
     ```
-5. Paste the ```Running on``` address into you browser. (In this example, http://127.0.0.1:5000/)
+5. Paste the 'Running on' address into you browser. (In this example, http://127.0.0.1:5000/)
