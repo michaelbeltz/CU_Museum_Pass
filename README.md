@@ -1,5 +1,6 @@
 # CU Museum Pass
 This site allows users to check out the museums offered for free by the Columbia University Museum Pass.
+
 It was created using.
 
 ## To run the site, follow these steps.
