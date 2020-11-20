@@ -16,6 +16,20 @@
 			body{
 				font-size: 30px;
 			}
+
+			/*navbar styling*/
+			.navbar {
+				min-height: 80px;
+				font-size: 25px;
+			}
+			.sbox{
+				align-content: right;
+				display: inline-block;
+			}
+			.go{
+				display: inline-block;
+			}
+
 			#header{
 				padding: 100px;
 				font-size: 75px;
@@ -25,10 +39,22 @@
 			#description_text{
 				width: 100%;
 			}
+			#padding
+			{
+				padding-bottom: 100px;
+			}
 			.error{
 				background: #F75D59;
 				padding:5px;
 				font-weight: bold;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.success{
+				background: lightblue;
+				font-size: 20px;
+				padding:5px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -39,12 +65,37 @@
 	
 	<body>
 		<div class='container-fluid'>
+
+			<!-- navbar -->
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="/">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/create">Add</a>
+						</li>
+					</ul>
+
+					<div class="sbox">
+						<input class="searchbar form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					</div>
+
+					<button class="go btn btn-outline-success my-2 my-sm-0" type="submit">Go</button>
+				</div>
+			</nav>
+
+			<div id="success_placeholder">
+				
+			</div>
+
 			<div class='row'>
 				<div class='col-md-2'>
 				</div>
 				<div class='col-md-8'>
 					<div id="header">
-						Create New Museum
+						Add New Museum
 					</div>
 					<div id='name'>
 						Name: <input type='text' id='name_text'>
@@ -75,5 +126,9 @@
 				</div>
 			</div>
 		</div>
+
+		<div id="padding"> 
+		</div>
+
 	</body>
 </html>

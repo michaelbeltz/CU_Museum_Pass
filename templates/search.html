@@ -6,12 +6,13 @@
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 		
-		<script type="text/javascript" src="{{ url_for('static', filename = 'index.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename = 'search.js') }}"></script>
 
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 		<script>
 			var museums = {{museums|tojson}}
+			var searchterm = {{searchterm|tojson}}
 		</script>
 
 		<style>
@@ -67,7 +68,6 @@
 				border: solid;
 				border-width: 1px;
 				border-color: black;
-				/*height: 200px;*/
 			}
 			.name{
 				font-size: 30px;
@@ -87,6 +87,9 @@
 			}
 			.words{
 				color: black;
+			}
+			.highlight{
+				background-color: yellow;
 			}
 
 			.image {
@@ -125,8 +128,9 @@
 						</li>
 					</ul>
 
+
 					<div class="sbox">
-						<input class="searchbar form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						<input class="searchbar form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" value="{{searchterm}}">
 					</div>
 
 					<button class="go btn btn-outline-success my-2 my-sm-0" type="submit">Go</button>
