@@ -6,7 +6,7 @@ This site allows users to check out the museums offered for free by the Columbia
 2. Install the Flask library by using
    ```$ pip install Flask```
 3. Go to the directory with server.py in it and run
-   $ python3 server.py
+   ```$ python3 server.py```
 4. A message like this should appear
     * Debug mode: on
     * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
