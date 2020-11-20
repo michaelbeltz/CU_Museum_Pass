@@ -1,5 +1,6 @@
 # CU Museum Pass
 This site allows users to check out the museums offered for free by the Columbia University Museum Pass.
+It was created using.
 
 ## To run the site, follow these steps.
 1. You need python to run this server, if you don't have it, you can get it here: https://www.python.org/downloads/
