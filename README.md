@@ -1,10 +1,10 @@
 # CU Museum Pass
 This site allows users to check out the museums offered for free by the Columbia University Museum Pass.
 
-To run the site, follow these steps.
+## To run the site, follow these steps.
 1. You need python to run this server, if you don't have it, you can get it here: https://www.python.org/downloads/
 2. Install the Flask library by using
-   $ pip install Flask
+   '''$ pip install Flask'''
 3. Go to the directory with server.py in it and run
    $ python3 server.py
 4. A message like this should appear
